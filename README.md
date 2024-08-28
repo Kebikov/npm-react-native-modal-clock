@@ -10,6 +10,7 @@ For setting the time by the user. It pops up as a modal window when clicked. Bui
 
 
 ![clock](https://github.com/Kebikov/npm-react-native-modal-clock/blob/main/images/clock.png?raw=true)
+![clock](./images/c1.jpg)
 
 
 ### 📖 Usage
@@ -66,6 +67,8 @@ export default SomeComponent;
 ```
 
 ### 🎨 Color costomise.
+
+You can set colors in: body, button, line and text color.
 
 ```typescript
 <Clock 
