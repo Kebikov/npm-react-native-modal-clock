@@ -5,14 +5,17 @@
 
 ### 📑 Description
 
-Для установки времени пользователем. Всплывает по нажатию как модальное окно. Для удобства основана на порталах.
+
+For setting the time by the user. It pops up as a modal window when clicked. Built on portals for convenience.
+
 
 ![clock](https://github.com/Kebikov/npm-react-native-modal-clock/blob/main/images/clock.png?raw=true)
 
 
 ### 📖 Usage
 
-В том месте где хотим чтобы всплывало модольное окно с часами, делаем как в коде ниже.
+In the place where we want the modal window with the clock to appear, we do as in the code below.
+
 ```typescript
 import { PortalProvider, PortalHost } from '@gorhom/portal';
 
@@ -27,7 +30,7 @@ const App: FC = () => {
 }
 ```
 
-Использование компонента.
+Component usage.
 
 ```typescript
 import React, { FC, useRef, useState } from 'react';
@@ -37,7 +40,7 @@ import { Clock, IClockRef, ITimeClock} from 'react-native-modal-clock';
 const SomeComponent: FC = () => {
 
     /**
-     * @param selectedTime Выбранное время пользователем.
+     * @param selectedTime Time selected by the user.
      */
     const [selectedTime, setSelectedTime] = useState<ITimeClock>({hour: '14', minute: '15'});
     const refClock = useRef<IClockRef>(null);
@@ -60,4 +63,18 @@ const SomeComponent: FC = () => {
 };
 
 export default SomeComponent;
+```
+
+### 🎨 Color costomise.
+
+```typescript
+<Clock 
+    setSelectedTime={setSelectedTime} 
+    selectedTime={selectedTime} 
+    colorBody='#241d3f' 
+    colorButton='#241d3f'
+    colorLine='#e2e0de'
+    colorText='#ffce6c'
+    ref={refClock} 
+/>
 ```
