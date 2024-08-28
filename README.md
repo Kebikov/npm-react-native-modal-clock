@@ -9,8 +9,9 @@
 For setting the time by the user. It pops up as a modal window when clicked. Built on portals for convenience.
 
 
-![clock](https://github.com/Kebikov/npm-react-native-modal-clock/blob/main/images/clock.png?raw=true)
+![clock](./images/c0.jpg)
 ![clock](./images/c1.jpg)
+![clock](./images/c2.jpg)
 
 
 ### 📖 Usage
